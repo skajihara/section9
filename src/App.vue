@@ -10,7 +10,7 @@ const currentComp = shallowRef(CompA)
   <button @click="currentComp = CompA">A</button>
   <button @click="currentComp = CompB">B</button>
   <button @click="currentComp = CompC">C</button>
-  <KeepAlive :max="2">
+  <KeepAlive>
     <component :is="currentComp" />
   </KeepAlive>
 </template>
