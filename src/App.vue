@@ -4,8 +4,12 @@ import BaseCard from './components/BaseCard.vue'
 <template>
   <h1>Slots</h1>
   <BaseCard>
-    <h2>Hello</h2>
-    <p>How are you?</p>
+    <template #header>
+      <h2>Vue.js Course</h2>
+    </template>
+    <p>This is a Vue.js Course. You can learn Vue.js.</p>
+    <template #footer>
+      <p>Instructor: Yoshipi</p>
+    </template>
   </BaseCard>
-  <BaseCard />
 </template>
